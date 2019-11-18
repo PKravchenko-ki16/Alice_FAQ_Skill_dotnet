@@ -1,0 +1,10 @@
+G:\Repo\Alice\Alice\bin\Debug\netcoreapp2.2\Alice.deps.json
+G:\Repo\Alice\Alice\bin\Debug\netcoreapp2.2\Alice.runtimeconfig.json
+G:\Repo\Alice\Alice\bin\Debug\netcoreapp2.2\Alice.runtimeconfig.dev.json
+G:\Repo\Alice\Alice\bin\Debug\netcoreapp2.2\Alice.dll
+G:\Repo\Alice\Alice\obj\Debug\netcoreapp2.2\Alice.csprojAssemblyReference.cache
+G:\Repo\Alice\Alice\obj\Debug\netcoreapp2.2\Alice.AssemblyInfoInputs.cache
+G:\Repo\Alice\Alice\obj\Debug\netcoreapp2.2\Alice.AssemblyInfo.cs
+G:\Repo\Alice\Alice\bin\Debug\netcoreapp2.2\Alice.pdb
+G:\Repo\Alice\Alice\obj\Debug\netcoreapp2.2\Alice.dll
+G:\Repo\Alice\Alice\obj\Debug\netcoreapp2.2\Alice.pdb
