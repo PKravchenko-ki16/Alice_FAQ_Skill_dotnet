@@ -15,7 +15,6 @@ namespace Alice
             foreach (var i in words)
             {
                 i.ToLower().Split().ToHashSet();
-                //if (text.ToLower().Split().ToHashSet().Any(x => i.Contains(x))) return true;
                 if (text.ToLower().Split().ToHashSet().Any(x => Regex.IsMatch(x, $"\\b{i}\\b"))) return true;
             }
             return false;
