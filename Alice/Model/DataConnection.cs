@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Alice.Model
+﻿namespace Alice.Model
 {
     public class DataConnection
     {

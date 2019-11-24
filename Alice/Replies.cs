@@ -11,10 +11,11 @@ namespace Alice
 
         public bool ContainOneOf(string text, string[] words)
         {
+            text.ToLower().Split().ToHashSet();
             foreach (var i in words)
             {
                 i.ToLower().Split().ToHashSet();
-                if (text.ToLower().Split().ToHashSet().Any(x => i.Contains(x))) return true;
+                if (text.IndexOf(i, StringComparison.OrdinalIgnoreCase) >= 0) return true;
             }
             return false;
         }
@@ -46,14 +47,15 @@ namespace Alice
 
             foreach (var i in answerManagement)
             {
-                if (ContainOneOf(req.Request.OriginalUtterance, i.Words_activators) && i.isEnd) 
+                if (!ContainOneOf(req.Request.OriginalUtterance, i.Words_activators) || !i.IsEnd)
                 {
-                    return response.Reply(req, i.Answers.Tts.ElementAt(random.Next(0, i.Answers.Tts.Length)),true);
-                }
-                if (ContainOneOf(req.Request.OriginalUtterance, i.Words_activators))
-                {
+                    if (!ContainOneOf(req.Request.OriginalUtterance, i.Words_activators))
+                    {
+                        continue;
+                    }
                     return response.Reply(req, i.Answers.Tts.ElementAt(random.Next(0, i.Answers.Tts.Length)));
                 }
+                return response.Reply(req, i.Answers.Tts.ElementAt(random.Next(0, i.Answers.Tts.Length)), true);
             }
 
             foreach (var i in answerStain)

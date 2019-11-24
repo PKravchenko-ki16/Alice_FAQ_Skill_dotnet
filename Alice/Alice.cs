@@ -3,29 +3,32 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using Alice;
+using Alice.Model;
 
-public class Alice_phrases : Controller
+namespace Alice
 {
-    public static void Main(string[] args)
+    public class Alice_replies : Controller
     {
-        var builder = CreateWebHostBuilder(args);
+        public static void Main(string[] args)
+        {
+            var builder = CreateWebHostBuilder(args);
 
-        var host = builder.Build();
+            var host = builder.Build();
 
-        host.Run();
-    }
+            host.Run();
+        }
 
-    public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-      WebHost.CreateDefaultBuilder(args)
-        .ConfigureServices(srv => srv.AddMvc())
-        .Configure(app => app.UseMvc());
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+          WebHost.CreateDefaultBuilder(args)
+            .ConfigureServices(srv => srv.AddMvc())
+            .Configure(app => app.UseMvc());
 
-    private Replies _replies = new Replies();
+        private Replies _replies = new Replies();
 
-    [HttpPost("/alice")]
-    public AliceResponse WebHook([FromBody] AliceRequest req)
-    {
-        return _replies.Match(req);
+        [HttpPost("/alice")]
+        public AliceResponse WebHook([FromBody] AliceRequest req)
+        {
+            return _replies.Match(req);
+        }
     }
 }

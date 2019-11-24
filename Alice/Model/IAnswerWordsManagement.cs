@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Alice.Model
+﻿namespace Alice.Model
 {
-    public interface IAnswerWordsManagement 
+    public interface IAnswerWordsManagement
     {
         string[] Text { get; set; }
         string[] Tts { get; set; }

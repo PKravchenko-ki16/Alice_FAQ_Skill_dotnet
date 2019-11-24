@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Repo\\Alice\\Alice\\Alice.csproj": {}
+    "G:\\Repo\\Alice_FAQ_Skill\\Alice\\Alice.csproj": {}
   },
   "projects": {
-    "G:\\Repo\\Alice\\Alice\\Alice.csproj": {
+    "G:\\Repo\\Alice_FAQ_Skill\\Alice\\Alice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Repo\\Alice\\Alice\\Alice.csproj",
+        "projectUniqueName": "G:\\Repo\\Alice_FAQ_Skill\\Alice\\Alice.csproj",
         "projectName": "Alice",
-        "projectPath": "G:\\Repo\\Alice\\Alice\\Alice.csproj",
+        "projectPath": "G:\\Repo\\Alice_FAQ_Skill\\Alice\\Alice.csproj",
         "packagesPath": "C:\\Users\\Павел\\.nuget\\packages\\",
-        "outputPath": "G:\\Repo\\Alice\\Alice\\obj\\",
+        "outputPath": "G:\\Repo\\Alice_FAQ_Skill\\Alice\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -66,10 +66,6 @@
             "Ngrok.AspNetCore": {
               "target": "Package",
               "version": "[1.0.6, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
             }
           },
           "imports": [
